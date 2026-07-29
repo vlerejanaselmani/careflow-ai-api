@@ -9,6 +9,7 @@ const app = createApp({ env });
 serve({
   fetch: app.fetch,
   port: env.PORT,
+  hostname: "0.0.0.0",
 });
 
 console.info(`CareFlow AI API listening on http://localhost:${env.PORT}`);

@@ -1,4 +1,5 @@
 FROM oven/bun:1.2.19-alpine AS base
+
 WORKDIR /app
 
 COPY package.json bun.lock ./
@@ -8,6 +9,7 @@ COPY tsconfig.json ./
 COPY src ./src
 
 ENV NODE_ENV=production
-EXPOSE 3000
+
+EXPOSE 8080
 
 CMD ["bun", "run", "src/server.ts"]

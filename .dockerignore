@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# GitHub
+.github
+
+# Dependencies
+node_modules
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode
+.idea
+
+# Tests and coverage
+coverage
+
+# Temporary credentials
+gha-creds-*.json
+
+# Documentation not needed in the image
+README.md
